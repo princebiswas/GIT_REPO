@@ -1,0 +1,11 @@
+{
+"searchbox":{
+	"type":"id",
+	"value":"twotabsearchtextbox"
+},
+
+"searchbutton" : {
+"type": "xpath",
+"value":"//input[@value='Go']"
+},
+}
