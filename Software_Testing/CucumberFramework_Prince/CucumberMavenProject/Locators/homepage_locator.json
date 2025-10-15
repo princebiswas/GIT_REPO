@@ -1,14 +1,14 @@
 {
   "searchbox": {
-    "type": "id",
-    "value": "twotabsearchtextbox"
+    "type": "idxpath",
+    "value": "//input[@placeholder='Search for anything']"
   },
   "searchbutton": {
     "type": "xpath",
-    "value": "//input[@value='Go']"
+    "value": "//button[@value='Search']"
   },
-  "dropdownbutton":{
-  	 "type": "id",
-     "value": "searchDropdownBox"
+  "validationSearchResultxpath":{
+  	 "type": "xpath",
+     "value": "//span[@class='BOLD']"
   },
 }
