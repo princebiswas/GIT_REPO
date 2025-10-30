@@ -8,18 +8,18 @@ import utility.LocatorReader;
 
 public class BasePage {
 	public WebDriver driver;
-	public LocatorReader loatorReader;
+	public LocatorReader locatorReader;
 	
 	public BasePage(WebDriver driver)
 	{
 	this.driver = driver;
-	this.loatorReader=  new LocatorReader("Locators\\homepage_locator.json");
+	this.locatorReader=  new LocatorReader("Locators\\homepage_locator.json");
 	}
 	
 	public WebElement getElement(String key)
 	{
-		String type = loatorReader.getLoctorType(key);
-		String value = loatorReader.getLoctorValue(key);
+		String type = locatorReader.getLocatorType(key);
+		String value = locatorReader.getLocatorValue(key);
 		switch(type)
 		{
 		case "id" : return driver.findElement(By.id(value));

@@ -1,12 +1,8 @@
  package utility;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
-
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 public class LocatorReader {
 	
@@ -25,19 +21,21 @@ public class LocatorReader {
 			
 	}
 	
-	public String getLoctorType(String key)
+	public String getLocatorType(String key)
 	{
 		JSONObject locator = (JSONObject) locators.get(key);
 		return (String) locator.get("type");
 		
 	}
 	
-	public String getLoctorValue(String key)
+	public String getLocatorValue(String key)
 	{
 		JSONObject locator = (JSONObject) locators.get(key);
 		return (String) locator.get("value");
 		
 	}
+	
+	
 	
 
 }
