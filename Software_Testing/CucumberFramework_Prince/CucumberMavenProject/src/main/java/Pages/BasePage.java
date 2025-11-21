@@ -10,10 +10,12 @@ public class BasePage {
 	public WebDriver driver;
 	public LocatorReader locatorReader;
 	
-	public BasePage(WebDriver driver)
+	public BasePage(WebDriver driver , String locatorFileName)
 	{
 	this.driver = driver;
-	this.locatorReader=  new LocatorReader("Locators\\homepage_locator.json");
+	this.locatorReader=  new LocatorReader("Locators\\"+locatorFileName);
+   // this.locatorReader=  new LocatorReader("Locators\\homepage_locator.json");
+
 	}
 	
 	public WebElement getElement(String key)

@@ -1,14 +1,14 @@
 {
-  "searchbox": {
-    "type": "idxpath",
-    "value": "//input[@placeholder='Search for anything']"
-  },
-  "searchbutton": {
+  "ShopByCategory": {
     "type": "xpath",
-    "value": "//button[@value='Search']"
+    "value": "//span[contains(text(),'Shop by category')]"
   },
-  "validationSearchResultxpath":{
-  	 "type": "xpath",
-     "value": "//span[@class='BOLD']"
-  },
+  
+  "Motorcycle": {
+    "type": "xpath",
+    "value": "//a[contains(text(),'Motorcycles')]"
+  }
+  
+  
+  
 }
