@@ -1,0 +1,16 @@
+<suite name = "Amazon Test Suite">
+
+	<test name = "Amazon Search Test">
+	
+	<classes>
+	
+	<class name = "runner.TestRunner"/>
+	
+	</classes>
+	
+	
+	
+	</test>
+
+
+</suite>
